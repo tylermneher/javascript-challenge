@@ -1,3 +1,5 @@
+// UFO-level1
+// Tyler M. Neher, 2020
 // from data.js
 var tableData = data;
 // Select tbody and make variable.
@@ -15,8 +17,6 @@ data.forEach(function (UFOreport) {
     cell.text(value);
   });
 });
-
-
 // Select the button
 var button = d3.select("#filter-btn");
 // what happens when the button is clicked

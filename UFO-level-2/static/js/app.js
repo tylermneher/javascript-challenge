@@ -22,11 +22,30 @@ var button = d3.select("#filter-btn");
 // what happens when the button is clicked
 button.on("click", function () {
   // get the input element
-  var inputElement = d3.select("#datetime");
-  console.log(inputElement);
+  var inputElement_datetime = d3.select("#datetime");
+  var inputElement_city = d3.select("#city");
+  var inputElement_state = d3.select("#state");
+  var inputElement_country = d3.select("#country");
+  var inputElement_shape = d3.select("#shape");
+  console.log(inputElement_datetime);
+  console.log(inputElement_city);
+  console.log(inputElement_state);
+  console.log(inputElement_country);
+  console.log(inputElement_shape);
+
   // Get the value property of the input element
-  var inputElementValue = inputElement.property("value");
-  console.log(inputElementValue);
+  var inputElementValue_datetime = inputElement_datetime.property("value");
+  var inputElementValue_city= inputElement_city.property("value");
+  var inputElementValue_state = inputElement_state.property("value");
+  var inputElementValue_country = inputElement_country.property("value");
+  var inputElementValue_shape = inputElement_shape.property("value");
+
+  console.log(inputElementValue_datetime);
+  console.log(inputElementValue_city);
+  console.log(inputElementValue_state);
+  console.log(inputElementValue_country);
+  console.log(inputElementValue_shape);
+
   // filter data
   var inputFilter = data.filter((obj) => {
     return obj.datetime == inputElementValue;
